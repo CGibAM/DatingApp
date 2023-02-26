@@ -1,0 +1,9 @@
+<h1>{{title}}</h1> <!-- It comes from the app component.ts the variable title in the AppComponent-->
+
+<!--Display the users-->
+<ul> 
+    <!--Loop the users from the database-->
+    <li *ngFor="let user of users">
+        {{user.id}} - {{user.userName}}
+    </li>
+</ul>
